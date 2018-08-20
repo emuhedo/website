@@ -52,6 +52,11 @@ menu:
       Weight: 6
       Identifier: "slack"
       URL: "http://slack.kubernetes.io/"
+    - Name:
+      Pre: "<i class='fa fa-forumbee'></i>"
+      Weight: 7
+      Identifier: "forum"
+      URL: "http://discourse.appscode.com"
     - Name: Elasticsearch
       identifier: elasticsearch
       parent: database
