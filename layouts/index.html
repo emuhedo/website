@@ -48,29 +48,28 @@
                    <div class="tab-content tab-install-data">
                       <div class="tab-pane active" id="linux">
                          <pre class="installation-pre-code"><code>
-$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0/hack/deploy/kubedb.sh| bash
+$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.9.0-rc.0/hack/deploy/kubedb.sh| bash
 
-$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.8.0/kubedb-linux-amd64 \
+$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.9.0-rc.0/kubedb-linux-amd64 \
     && chmod +x kubedb \
     && sudo mv kubedb /usr/local/bin/</code></pre>
                       </div>
                       <div class="tab-pane" id="mac">
                          <pre class="installation-pre-code"><code>
-$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0/hack/deploy/kubedb.sh| bash
+$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.9.0-rc.0/hack/deploy/kubedb.sh| bash
 
-$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.8.0/kubedb-darwin-amd64 \
+$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.9.0-rc.0/kubedb-darwin-amd64 \
     && chmod +x kubedb \
     && sudo mv kubedb /usr/local/bin/</code></pre>
                       </div>
                       <div class="tab-pane" id="helm-chart">
                          <pre class="installation-pre-code"><code>
-# download onessl from https://github.com/kubepack/onessl/releases/tag/0.3.0
 $ helm repo add appscode https://charts.appscode.com/stable/
 $ helm repo update
-$ helm install kubedb --name kubedb-operator --version 0.8.0 \
-  --set apiserver.ca="$(onessl get kube-ca)" \
-  --set apiserver.enableValidatingWebhook=true \
-  --set apiserver.enableMutatingWebhook=true</code></pre>
+$ helm install appscode/kubedb --name kubedb-operator --version 0.9.0-rc.0 \
+  --namespace kube-system
+$ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.0 \
+  --namespace kube-system
                       </div>
                    </div>
                 </div>
@@ -84,7 +83,7 @@ $ helm install kubedb --name kubedb-operator --version 0.8.0 \
       <div class="row">
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0/guides/postgres/">
+               <a href="/docs/0.9.0-rc.0/guides/postgres/">
                   <div class="cc-icon">
                       <img src="/images/PostgreSQL.svg">
                   </div>
@@ -97,7 +96,7 @@ $ helm install kubedb --name kubedb-operator --version 0.8.0 \
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0/guides/elasticsearch/">
+               <a href="/docs/0.9.0-rc.0/guides/elasticsearch/">
                   <div class="cc-icon">
                      <img src="/images/elasticsearch.svg">
                   </div>
@@ -111,7 +110,7 @@ $ helm install kubedb --name kubedb-operator --version 0.8.0 \
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0/guides/mysql/">
+               <a href="/docs/0.9.0-rc.0/guides/mysql/">
                   <div class="cc-icon">
                      <img src="/images/mysql.svg">
                   </div>
@@ -125,7 +124,7 @@ $ helm install kubedb --name kubedb-operator --version 0.8.0 \
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0/guides/mongodb/">
+               <a href="/docs/0.9.0-rc.0/guides/mongodb/">
                   <div class="cc-icon">
                      <img src="/images/mongodb.svg">
                   </div>
@@ -138,7 +137,7 @@ $ helm install kubedb --name kubedb-operator --version 0.8.0 \
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0/guides/memcached/">
+               <a href="/docs/0.9.0-rc.0/guides/memcached/">
                   <div class="cc-icon">
                      <img src="/images/memcached.svg">
                   </div>
@@ -152,7 +151,7 @@ $ helm install kubedb --name kubedb-operator --version 0.8.0 \
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0/guides/redis/">
+               <a href="/docs/0.9.0-rc.0/guides/redis/">
                   <div class="cc-icon">
                      <img src="/images/redis.svg">
                   </div>
