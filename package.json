@@ -6,7 +6,7 @@
     "AppsCode Eng <eng@appscode.com>"
   ],
   "dependencies": {
-    "bootstrap": "4.0.0-beta",
+    "bootstrap": "^4.1.2",
     "bxslider": "^4.2.6",
     "codemirror": "^5.13.4",
     "featherlight": "^1.4.0",
