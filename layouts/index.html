@@ -48,17 +48,17 @@
                    <div class="tab-content tab-install-data">
                       <div class="tab-pane active" id="linux">
                          <pre class="installation-pre-code"><code>
-$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.9.0-rc.0/hack/deploy/kubedb.sh| bash
+$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.9.0-rc.1/hack/deploy/kubedb.sh| bash
 
-$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.9.0-rc.0/kubedb-linux-amd64 \
+$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.9.0-rc.1/kubedb-linux-amd64 \
     && chmod +x kubedb \
     && sudo mv kubedb /usr/local/bin/</code></pre>
                       </div>
                       <div class="tab-pane" id="mac">
                          <pre class="installation-pre-code"><code>
-$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.9.0-rc.0/hack/deploy/kubedb.sh| bash
+$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.9.0-rc.1/hack/deploy/kubedb.sh| bash
 
-$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.9.0-rc.0/kubedb-darwin-amd64 \
+$ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.9.0-rc.1/kubedb-darwin-amd64 \
     && chmod +x kubedb \
     && sudo mv kubedb /usr/local/bin/</code></pre>
                       </div>
@@ -66,9 +66,9 @@ $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.9.0-rc.0/kube
                          <pre class="installation-pre-code"><code>
 $ helm repo add appscode https://charts.appscode.com/stable/
 $ helm repo update
-$ helm install appscode/kubedb --name kubedb-operator --version 0.9.0-rc.0 \
+$ helm install appscode/kubedb --name kubedb-operator --version 0.9.0-rc.1 \
   --namespace kube-system
-$ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.0 \
+$ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.1 \
   --namespace kube-system</code></pre>
                       </div>
                    </div>
@@ -83,7 +83,7 @@ $ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.
       <div class="row">
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.9.0-rc.0/guides/postgres/">
+               <a href="/docs/0.9.0-rc.1/guides/postgres/">
                   <div class="cc-icon">
                       <img src="/images/PostgreSQL.svg">
                   </div>
@@ -96,7 +96,7 @@ $ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.9.0-rc.0/guides/elasticsearch/">
+               <a href="/docs/0.9.0-rc.1/guides/elasticsearch/">
                   <div class="cc-icon">
                      <img src="/images/elasticsearch.svg">
                   </div>
@@ -110,7 +110,7 @@ $ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.9.0-rc.0/guides/mysql/">
+               <a href="/docs/0.9.0-rc.1/guides/mysql/">
                   <div class="cc-icon">
                      <img src="/images/mysql.svg">
                   </div>
@@ -124,7 +124,7 @@ $ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.9.0-rc.0/guides/mongodb/">
+               <a href="/docs/0.9.0-rc.1/guides/mongodb/">
                   <div class="cc-icon">
                      <img src="/images/mongodb.svg">
                   </div>
@@ -137,7 +137,7 @@ $ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.9.0-rc.0/guides/memcached/">
+               <a href="/docs/0.9.0-rc.1/guides/memcached/">
                   <div class="cc-icon">
                      <img src="/images/memcached.svg">
                   </div>
@@ -151,7 +151,7 @@ $ helm install appscode/kubedb-catalog --name kubedb-catalog --version 0.9.0-rc.
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.9.0-rc.0/guides/redis/">
+               <a href="/docs/0.9.0-rc.1/guides/redis/">
                   <div class="cc-icon">
                      <img src="/images/redis.svg">
                   </div>
