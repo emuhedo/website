@@ -42,32 +42,32 @@
     "redirects": [
       {
         "source": "/docs/latest/",
-        "destination": "/docs/0.8.0/",
+        "destination": "/docs/0.9.0/",
         "type": 302
       },
       {
         "source": "/docs/latest/welcome/contributing/",
-        "destination": "/docs/0.8.0/welcome/contributing/",
+        "destination": "/docs/0.9.0/welcome/contributing/",
         "type": 302
       },
       {
         "source": "/docs/latest/concepts/",
-        "destination": "/docs/0.8.0/concepts/",
+        "destination": "/docs/0.9.0/concepts/",
         "type": 302
       },
       {
         "source": "/docs/latest/setup/",
-        "destination": "/docs/0.8.0/setup/",
+        "destination": "/docs/0.9.0/setup/",
         "type": 302
       },
       {
         "source": "/docs/latest/guides/",
-        "destination": "/docs/0.8.0/guides/",
+        "destination": "/docs/0.9.0/guides/",
         "type": 302
       },
       {
         "source": "/docs/latest/setup/install/",
-        "destination": "/docs/0.8.0/setup/install/",
+        "destination": "/docs/0.9.0/setup/install/",
         "type": 302
       }
     ]
